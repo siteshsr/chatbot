@@ -1,59 +1,58 @@
-<title>whatsapp</title>
-console.log = function () { };
-
-
-
-
-
-
-
-<div class="chat">
-    <div class="chat-container">
-        <div id="call" class="user-bar">
-            <div class="back">
-                <i class="zmdi zmdi-arrow-left"></i>
-            </div>
-            <div class="avatar">
-                <img decoding="async" src="https://avatars.githubusercontent.com/u/155313517?v=4" alt="Avatar">
-            </div>
-            <div class="name">
-                <span id="name"></span>
-                <span class="status"></span>
-            </div>
-            <div class="actions more">
-                <i class="zmdi zmdi-more-vert"></i>
-            </div>
-            <div class="actions attachment">
-                <i class="zmdi zmdi-attachment-alt"></i>
-            </div>
-            <div class="actions">
-                <i class="zmdi zmdi-phone"></i>
-            </div>
-        </div>
-        <div class="conversation">
-            <div class="conversation-container">
-                <span id="ap">
-                </span>
-            </div>
-
-                <div class="emoji">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-container">
+            <div id="call" class="user-bar">
+                <div class="back">
+                    <i class="zmdi zmdi-arrow-left"></i>
                 </div>
-
-                <div class="photo">
-                    <i class="zmdi zmdi-camera"></i>
+                <div class="avatar">
+                    <img decoding="async" src="https://avatars.githubusercontent.com/u/155313517?v=4" alt="Avatar">
                 </div>
-                <span id="speak"></span>
-                <span class="send">
-                    <div class="circle">
-                        <i id="msend" class="zmdi zmdi-mail-send"></i>
+                <div class="name">
+                    <span id="name"></span>
+                    <span class="status"></span>
+                </div>
+                <div class="actions more">
+                    <i class="zmdi zmdi-more-vert"></i>
+                </div>
+                <div class="actions attachment">
+                    <i class="zmdi zmdi-attachment-alt"></i>
+                </div>
+                <div class="actions">
+                    <i class="zmdi zmdi-phone"></i>
+                </div>
+            </div>
+            <div class="conversation">
+                <div class="conversation-container">
+                    <span id="ap"></span>
+                </div>
+                <div class="conversation-compose">
+                    <div class="emoji">
+                        <i class="zmdi zmdi-mood"></i>
                     </div>
-                </span>
-
+                    <input type="text" id="val" class="input-msg" placeholder="Type a message">
+                    <div class="photo">
+                        <i class="zmdi zmdi-camera"></i>
+                    </div>
+                    <span id="speak"></span>
+                    <button class="send" id="msend">
+                        <div class="circle">
+                            <i class="zmdi zmdi-mail-send"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
